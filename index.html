@@ -8,7 +8,7 @@
     body {
       background-color: #ffc0cb; /* pink background */
       font-family: 'Press Start 2P', cursive;
-      font-size: 4vw; /* ขนาดข้อความปรับตามหน้าจอ */
+      font-size: 20px; /* ตัวหนังสือใหญ่ขึ้น */
       color: #222;
       text-align: center;
       padding: 20px;
@@ -16,41 +16,49 @@
       overflow-x: hidden;
       touch-action: manipulation;
     }
-    .scene { margin-top: 5vh; }
+    .scene { margin-top: 50px; }
     .hidden { display: none; }
     .btn {
       display: inline-block;
       background: #ffb6c1;
       border: 3px solid #000;
-      padding: 1vw 2vw;
-      margin: 1vw;
+      padding: 14px 24px; /* ปรับให้กดง่าย */
+      margin: 12px;
       cursor: pointer;
-      font-size: 3vw;
+      font-size: 20px; /* ปรับให้ปุ่มใหญ่ขึ้น */
       image-rendering: pixelated;
     }
     .btn:hover { background: #ffcce0; }
     .heart {
       position: absolute;
-      font-size: 6vw;
+      font-size: 36px; /* หัวใจใหญ่ขึ้น */
       animation: floatUp 2s linear forwards;
       pointer-events: none;
     }
     @keyframes floatUp {
       from { transform: translateY(0); opacity: 1; }
-      to { transform: translateY(-30vh); opacity: 0; }
+      to { transform: translateY(-150px); opacity: 0; }
     }
     .cat {
-      font-size: 8vw; /* ตัวแมวใหญ่ขึ้น */
-      line-height: 8vw;
+      font-size: 48px; /* ตัวแมวใหญ่ขึ้น */
+      line-height: 48px;
       white-space: pre;
-      margin: 3vw auto;
+      margin: 20px auto;
       display: block;
+    }
+
+    /* ปรับมือถือเล็กสุด */
+    @media (max-width: 500px) {
+      body { font-size: 22px; }
+      .cat { font-size: 60px; line-height: 60px; }
+      .btn { font-size: 24px; padding: 16px 28px; }
+      .heart { font-size: 48px; }
     }
   </style>
 </head>
 <body>
 
-<h1>text to u</h1>
+<h1>From Ploy to P</h1>
 
 <div id="scene1" class="scene">
   <p id="message1"></p>
@@ -94,7 +102,7 @@
 </div>
 
 <div id="scene5" class="scene hidden">
-  <p>Do you like it? I spent a lot of time creating it! Next time, I will add moving characters. Thanks for reading till the end!</p>
+  <p>Do you like it? I spent a lot of time creating it! Next time, I will add moving characters and song this for just testing thx u for being at the end(⁠人⁠ ⁠•͈⁠ᴗ⁠•͈⁠).</p>
   <pre class="cat">
  /\_/\  
 ( >.< ) 
